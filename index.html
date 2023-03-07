@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="contenedor">
+ <div class="inicio">
+    <div class="foto">
+        <img src="./images/fotocv.jpg" alt="Foto Principal">
+    </div>
+
+    <div>
+        <h1 class="nombre">Adam</h1>
+        <h2 class="apellido">Arenadler</h2>
+        <h3 class="poli">Polifacético</h3>
+    </div>
+
+    <div class="index">
+        <h4 class="indice">Índice</h4>
+        <a href="#experiencia" id="index_experiencia">Experiencia</a>
+        <a href="#educacion" id="index_educacion">Educación</a>
+        <a href="#habilidades" id="index_habilidades">Habilidades</a>
+        <a href="#contacto" id="index_contacto">Contacto</a>
+    </div>
+</div>     
+    
+ <div class="info_cv"> 
+    <div class="experiencia" >
+        <a name="experiencia">
+            <h1 id="titulo_exp">Experiencias
+            </h1>
+            <select name="sel_exp" id="sel_exp_id" onchange="cambiaExp(this)">
+                <option value="seleccione">Seleccione una Experiencia</option>
+                <option value="golfista">Golfista</option>
+                <option value="zapatero">Zapatero</option>
+                <option value="cirujano">Cirujano</option>
+                <option value="vaquero">Vaquero</option>
+                <option value="gamer">Gamer Heroe</option>
+            </select>
+        </a>
+
+        <div id="exp_golfista"> 
+            <h1>Experiencia como Golfista</h1>
+            <div class="fotoGolfista">
+                <img src="./images/fotogolfista.jpg" alt="Foto golfista">
+            </div>
+        
+            <div>
+                <h1 id="descripcion_golfista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                    suscipit, quia, praesentium voluptate expedita, aspernatur
+                    molestiae iusto quibusdam accusantium magni ex distinctio natus
+                    architecto incidunt tempore numquam provident! Optio, eveniet?</h1>
+            </div>
+        </div>
+        
+        <div id="exp_zapatero"> 
+            <h1>Experiencia como Zapatero</h1>
+            <div class="fotozapatero">
+                <img src="./images/fotozapatero.jpg" alt="Foto zapatero">
+            </div>
+        
+            <div>
+                <h1 id="descripcion_zapatero">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                    suscipit, quia, praesentium voluptate expedita, aspernatur
+                    molestiae iusto quibusdam accusantium magni ex distinctio natus
+                    architecto incidunt tempore numquam provident! Optio, eveniet?</h1>
+            </div>
+        </div>
+        <div id="exp_cirujano"> 
+            <h1>Experiencia como Cirujano plastico</h1>
+            <div class="fotocirujano">
+                <img src="./images/fotocirujano.jpg" alt="Foto cirujano">
+            </div>
+        
+            <div>
+                <h1 id="descripcion_cirujano">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                    suscipit, quia, praesentium voluptate expedita, aspernatur
+                    molestiae iusto quibusdam accusantium magni ex distinctio natus
+                    architecto incidunt tempore numquam provident! Optio, eveniet?</h1>
+            </div>
+        </div>
+        <div id="exp_vaquero"> 
+            <h1>Experiencia como Vaquero</h1>
+            <div class="fotovaquero">
+                <img src="./images/fotovaquero.jpg" alt="Foto vaquero">
+            </div>
+        
+            <div>
+                <h1 id="descripcion_vaquero">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                    suscipit, quia, praesentium voluptate expedita, aspernatur
+                    molestiae iusto quibusdam accusantium magni ex distinctio natus
+                    architecto incidunt tempore numquam provident! Optio, eveniet?</h1>
+            </div>
+        </div>
+        <div id="exp_gamer"> 
+            <h1>Experiencia como Heroe Gamer</h1>
+            <div class="fotogamer">
+                <img src="./images/fotogamer2.jpg" alt="Foto gamer">
+            </div>
+        
+            <div>
+                <h1 id="descripcion_gamer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                    suscipit, quia, praesentium voluptate expedita, aspernatur
+                    molestiae iusto quibusdam accusantium magni ex distinctio natus
+                    architecto incidunt tempore numquam provident! Optio, eveniet?</h1>
+            </div>
+        </div>
+        
+    </div> 
+
+    <div class="educacion" >
+        <a name="educacion">
+            <h1 id="titulo_educacion">Educacion
+            </h1>
+            <h3>Escuela Primaria (no preguntar).</h3>
+            <img src="./images/fotoprimaria.jpg" alt="Foto de Primaria" >
+        </a>
+        
+    </div>
+    <div class="habilidades" >
+        <a name="habilidades">
+            <h1 id="titulo_habilidades">Habilidades
+            </h1>
+            <ul class="skillsList">
+                <li>Buen Bailarin   <i class="fa-solid fa-share" id="flecha"></i></li>                
+                <iframe width="280" height="152" src="https://www.youtube.com/embed/6VdohdQK5hM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p></p>
+                <li>Exelente Nadador   <i class="fa-solid fa-share" id="flecha"></i></li></li>
+                <iframe width="280" height="152" src="https://www.youtube.com/embed/SbpghQpTgHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p></p>
+                <li>Comunicacion con morsas   <i class="fa-solid fa-share" id="flecha"></i></li></li>
+                <iframe width="280" height="152" src="https://www.youtube.com/embed/lQoMIGl_NTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </ul>
+        </a>
+        
+    </div>
+    <div class="contacto">
+        <a name="contacto">
+            <h1 id="titulo_contacto">Contacto
+            </h1>
+            <i class="fa-brands fa-twitter"></i>
+            <a href="https://twitter.com/AdamSandler" target="_blank" rel="noopener noreferrer">/AdamArenadler</a>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/adamsandler/" target="_blank" rel="noopener noreferrer">/AdamArenadler</a>
+            <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.facebook.com/Sandler" target="_blank" rel="noopener noreferrer">/Arenadler</a>
+            <h3>Para saber más de mi, haz click <a href="https://www.google.com/search?q=adam+sandler+filmografia&bih=635&biw=1366&hl=es-419&sxsrf=AJOqlzVMyTB7ltzS4OKeh7iVz9nhvfkLDw%3A1678198289007&ei=EUYHZLsIzMzWxA-s6r0Y&oq=adam+sandler+fi&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoGCCMQJxATOgQIIxAnOgQILhBDOgQIABBDOhEILhCABBCxAxCDARDHARDRAzoLCAAQgAQQsQMQgwE6CgguELEDEIMBEEM6BwgAELEDEEM6CggAEIAEEBQQhwI6CAguENQCEIAESgQIQRgAUABYtKl1YKK5dWgDcAF4AIABWYgBzwOSAQE2mAEAoAEBwAEB&sclient=gws-wiz-serp#wgvs=e" target="_blank" rel="noopener noreferrer">aquí</a></h3>
+        </a>        
+    </div> 
+</div>
+</div>
+ <script src="./scripts/script.js"></script>  
+</body>
+</html>
