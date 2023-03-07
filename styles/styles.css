@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;500;600&display=swap');
+
+body{
+    background-color:    black;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.contenedor{
+    background: rgb(247, 119, 15);
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+    
+    padding: 5rem;   
+    
+}
+
+div.inicio{
+    
+    display:grid;
+    padding: 2rem;    
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+.foto{
+    
+    width: 100%;
+    height: auto;
+}
+
+.nombre{   
+    margin-top: 5px; 
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.apellido{
+    margin-top: -2rem;  
+    font-size: clamp(1rem, 8vw, 4rem); 
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.poli
+{  
+    font-size: clamp(1rem, 1vw, 1rem);
+    text-align: end;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.index{
+    text-align: center;
+    border-style: dotted;
+    width: 100%;
+    grid-column: 3;
+}
+
+/*#index_educacion::before{
+    content: "\a";
+    white-space: pre;
+}
+#index_contacto::before{
+    content: "\a";
+    white-space: pre;
+}
+#index_habilidades::before{
+    content: "\a";
+    white-space: pre;
+}*/
+
+div.info_cv{  
+    width: 100%;      
+    gap: 2rem;    
+    text-align: center;      
+    margin: 0 auto;
+    display: grid;
+    padding: 2rem;    
+    box-sizing: border-box;
+}
+.educacion img{    
+    width: 100%;
+    height: auto;
+}
+
+#titulo_exp{
+    color: rgb(0, 89, 255);
+    border-style:double;
+    font-weight:600;
+}
+#titulo_educacion{
+    color: rgb(0, 89, 255);
+    font-weight:600;
+    border-style:double
+}
+#titulo_habilidades{
+    color: rgb(0, 89, 255);
+    font-weight:600;
+    border-style:double
+}
+#titulo_contacto{
+    color: rgb(0, 89, 255);
+    font-weight:600;
+    border-style:double
+}
+
+select {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Shantell Sans', cursive;
+    outline: 0;
+    background: #477ec5;
+    color: #fff;
+    border: 1px solid white;
+    padding: 4px;
+    border-radius: 9px;
+    text-align: center;
+  }
+
+#exp_golfista{
+    color: whitesmoke;
+    display: none;  
+}
+
+#exp_zapatero{
+    color: whitesmoke;
+    display: none;
+}
+
+#exp_cirujano{
+    color: whitesmoke;
+    display: none;
+}
+
+#exp_vaquero{
+    color: whitesmoke;
+    display: none;
+}
+
+#exp_gamer{
+    color: whitesmoke;
+    display: none;
+}
+
+ul.skillsList{
+    color: whitesmoke;
+    list-style-position: inside;    
+}
+
+li{
+   color: antiquewhite; 
+}
+
+#flecha{
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 768px){
+    
+
+    .inicio{
+        width: 100%;
+    }
+    #fotocv{
+        margin-left: 25%;
+    }
+    .index{
+        margin-left: 13%;
+        width: 100%;
+        grid-column: 1;
+    }
+    #presentacion{
+        grid-column: 1;
+        margin-left: 15%;
+    }
+    
+    #exp_golfista, #exp_zapatero, #exp_cirujano, #exp_vaquero, #exp_gamer{
+        font-size: x-small;
+    }
+    
+}
